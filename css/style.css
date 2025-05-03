@@ -1,0 +1,178 @@
+body {
+      font-family: 'Poppins';
+      background-color: #fff;
+      text-align: center;
+     margin: 0;
+    }
+
+.navbar-custom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link.active {
+  border-bottom: 2px solid black;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger div {
+  width: 20px;
+  height: 3px;
+  background-color: black;
+}
+
+.social-icons a {
+  color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  padding: 5px;
+  margin-left: 10px;
+  text-align: center;
+  
+}
+
+
+/* hero section css */
+.thank-you-img {
+    width: 350px;
+    /* margin: 0 auto -20px; */
+  }
+
+  h1 {
+    font-family: 'Poly';
+    font-size: 90px;
+    font-weight:400px;
+    margin-bottom: -20px;
+  }
+
+  p {
+    color:#121212;
+    font-size: 15px; 
+    font-family:'Poppins';
+    margin-top: 20px;
+  }
+
+  .btn-home {
+    background-color: #000;
+    color: white;
+    border-radius: 30px;
+    padding: 12px 30px;
+    font-weight: 500px;
+    margin-top: 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-size: 15px;
+  }
+
+  .btn-home:hover {
+    background-color: #222;
+  }
+  /* Resposive css start */
+  @media (max-width: 1024px) {
+      h1 {
+        font-size: 70px;
+      }
+
+      .thank-you-img {
+        width: 300px;
+      }
+
+      .btn-home {
+        padding: 10px 25px;
+        font-size: 14px;
+      }
+
+  
+    }
+
+    @media (max-width: 768px) {
+      .hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 2rem;
+        background-color: white;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        width: 200px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      h1 {
+        font-size: 50px;
+      }
+
+      .thank-you-img {
+        width: 250px;
+      }
+
+      .btn-home {
+        padding: 8px 20px;
+        font-size: 13px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 43px;
+      }
+    
+      p {
+        font-size: 14px;
+        padding-top: 5px;
+      }
+    
+      .thank-you-img {
+        width: 200px;
+        padding-top: 100px;
+      }
+    
+      .btn-home {
+        padding: 7px 16px;
+        font-size: 13px;
+      }
+    
+      .nav-links {
+        width: 100%;
+        left: 0;
+        right: 0;
+        top: 60px;
+      }
+    }
+  
